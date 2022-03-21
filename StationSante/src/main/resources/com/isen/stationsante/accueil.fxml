@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="fond" fx:id="Fond" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.isen.stationsante.Accueil">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" stylesheets="@style.css">
+         <children>
+            <Pane id="bordure" fx:id="Tension" layoutX="334.0" layoutY="335.0" prefHeight="290.0" prefWidth="541.0" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="70.0">
+                     <image>
+                        <Image url="@tension.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="8.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tension">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane id="bordure" fx:id="Pouls" layoutX="25.0" layoutY="35.0" prefHeight="290.0" prefWidth="850.0" stylesheets="@style.css">
+               <children>
+                  <Text fill="WHITE" layoutX="8.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fréquence cardiaque">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="261.0" fitWidth="254.0" layoutY="15.0">
+                     <image>
+                        <Image url="@pouls.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane id="bordure" fx:id="Temperature" layoutX="25.0" layoutY="335.0" prefHeight="290.0" prefWidth="300.0" stylesheets="@style.css">
+               <children>
+                  <Text fill="WHITE" layoutX="8.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Température">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="120.0" layoutY="201.0" opacity="0.0" prefHeight="52.0" prefWidth="152.0" text="36.3" />
+                  <Text fill="WHITE" layoutX="118.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ambiante :">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="115.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Corporelle :">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="120.0" layoutY="87.0" opacity="0.0" prefHeight="52.0" prefWidth="152.0" promptText="23.1" text="23.1">
+                     <font>
+                        <Font size="27.0" />
+                     </font></TextField>
+                  <ImageView fitHeight="229.0" fitWidth="225.0" layoutX="-55.0" layoutY="40.0">
+                     <image>
+                        <Image url="@thermometre.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATION DE SANTE CONNECTE" textAlignment="CENTER" wrappingWidth="1000.0">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="127.0" layoutY="28.0">
+         <image>
+            <Image url="@icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="795.0" layoutY="25.0">
+         <image>
+            <Image url="@icon2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

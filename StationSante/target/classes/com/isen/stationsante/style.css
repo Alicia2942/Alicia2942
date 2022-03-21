@@ -1,0 +1,9 @@
+#bordure{
+    -fx-border-style: solid;
+    -fx-border-color: white;
+
+}
+
+#fond{
+    -fx-background-color: linear-gradient(to top right,#DE9CA5, #AC9CDE);
+}
